@@ -25,29 +25,47 @@ public class Application {
 	@GetMapping ("/")
 	public String index() {
 		Barcode barcode = new Barcode();
-		Image img = barcode.encode(EncodingType.UPCA, "038000356216");
+		Image img = barcode.encode(EncodingType.CODE128, "12345678");
 		return savePic(img,"PNG","testts.png");
 	}
 
 	public String savePic(Image image, String type, String dst){
 
-		BufferedImage bi = new BufferedImage(300,300, BufferedImage.TYPE_INT_ARGB);
-		int heightImage = bi.getHeight();
-		int widthImage = bi.getWidth();
-		Graphics g = bi.getGraphics();
+		int heightImage = 300;
+		int widthImage = 300;
+
+		BufferedImage bufferedImage = new BufferedImage(widthImage,heightImage, BufferedImage.TYPE_INT_ARGB);
+		Graphics graphics = bufferedImage.getGraphics();
+
 		try {
-			g.setColor(Color.WHITE);
-			g.fillRect(0,0,widthImage,heightImage);
-			g.setColor(Color.RED);
-			Font font = new Font(Font.SERIF, Font.PLAIN, 24);
-			g.setFont(font);
-			FontMetrics fontMetrics = g.getFontMetrics();
-			g.fillRect(0,0,widthImage,fontMetrics.getHeight()+10);
-			g.setColor(Color.WHITE);
-			g.drawString("BIGMARKET",(widthImage - fontMetrics.stringWidth("BIGMARKET"))/2, fontMetrics.getHeight());
-			g.drawImage(image, 0, 80, null);
-			ImageIO.write(bi, type, new File(dst));
-			return "H: " + heightImage + " W: " + widthImage + "Font H: " + fontMetrics.getHeight();
+			graphics.setColor(Color.WHITE);
+			Font fontTitle = new Font(Font.SERIF, Font.PLAIN, 25);
+			Font fontCode = new Font(Font.SERIF, Font.PLAIN,25);
+			Font fontDesc = new Font(Font.SERIF, Font.PLAIN, 20);
+			Font fontPrice = new Font(Font.SERIF, Font.BOLD,25);
+
+			FontMetrics fontMetrics = graphics.getFontMetrics();
+			graphics.fillRect(0,0,widthImage,heightImage);
+			graphics.setColor(Color.BLACK);
+			graphics.setFont(fontTitle);
+			fontMetrics = graphics.getFontMetrics();
+			graphics.drawString("BIGMARKET",(widthImage - fontMetrics.stringWidth("BIGMARKET"))/2, fontMetrics.getHeight() + 5);
+			graphics.drawImage(image, 0, fontMetrics.getHeight() + 10, null);
+			graphics.setFont(fontCode);
+			fontMetrics = graphics.getFontMetrics();
+			graphics.drawString("12345678",(widthImage - fontMetrics.stringWidth("12345678"))/2,80 + image.getHeight(null));
+			graphics.setFont(fontDesc);
+			fontMetrics = graphics.getFontMetrics();
+			graphics.drawString("Descripcion",(widthImage - fontMetrics.stringWidth("Descripcion"))/2,110 + image.getHeight(null));
+			graphics.setFont(fontPrice);
+			fontMetrics = graphics.getFontMetrics();
+			graphics.drawString("$10.000",(widthImage - fontMetrics.stringWidth("$10.000"))/2,140 + image.getHeight(null));
+
+			BufferedImage bufferedImageSmall = new BufferedImage(100,100,BufferedImage.TYPE_INT_ARGB);
+			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(100,100,BufferedImage.SCALE_SMOOTH),0,0,null);
+
+			ImageIO.write(bufferedImageSmall, type, new File(dst));
+			return "BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth("BIGMARKET"))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
