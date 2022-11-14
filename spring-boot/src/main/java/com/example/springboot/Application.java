@@ -36,7 +36,7 @@ public class Application {
 		int heightImageSmall = 200;
 		int widthImageSmall = 200;
 
-		BufferedImage bufferedImage = new BufferedImage(widthImage,heightImage, BufferedImage.TYPE_INT_BGR);
+		BufferedImage bufferedImage = new BufferedImage(widthImage,heightImage, BufferedImage.TYPE_INT_ARGB);
 		Graphics graphics = bufferedImage.getGraphics();
 
 		try {
