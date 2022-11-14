@@ -33,8 +33,10 @@ public class Application {
 
 		int heightImage = 300;
 		int widthImage = 300;
+		int heightImageSmall = 200;
+		int widthImageSmall = 200;
 
-		BufferedImage bufferedImage = new BufferedImage(widthImage,heightImage, BufferedImage.TYPE_INT_ARGB);
+		BufferedImage bufferedImage = new BufferedImage(widthImage,heightImage, BufferedImage.TYPE_INT_BGR);
 		Graphics graphics = bufferedImage.getGraphics();
 
 		try {
@@ -61,8 +63,8 @@ public class Application {
 			fontMetrics = graphics.getFontMetrics();
 			graphics.drawString("$10.000",(widthImage - fontMetrics.stringWidth("$10.000"))/2,140 + image.getHeight(null));
 
-			BufferedImage bufferedImageSmall = new BufferedImage(100,100,BufferedImage.TYPE_INT_ARGB);
-			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(100,100,BufferedImage.SCALE_SMOOTH),0,0,null);
+			BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
+			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
 
 			ImageIO.write(bufferedImageSmall, type, new File(dst));
 			return "BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth("BIGMARKET"))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null);
