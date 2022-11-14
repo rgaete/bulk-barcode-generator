@@ -63,10 +63,10 @@ public class Application {
 			fontMetrics = graphics.getFontMetrics();
 			graphics.drawString("$10.000",(widthImage - fontMetrics.stringWidth("$10.000"))/2,140 + image.getHeight(null));
 
-			BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
-			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
+			//BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
+			//bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
 
-			ImageIO.write(bufferedImageSmall, type, new File(dst));
+			ImageIO.write(bufferedImage, type, new File(dst));
 			return "BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth("BIGMARKET"))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
