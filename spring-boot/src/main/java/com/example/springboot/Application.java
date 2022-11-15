@@ -2,17 +2,32 @@ package com.example.springboot;
 
 import com.pnuema.java.barcode.Barcode;
 import com.pnuema.java.barcode.EncodingType;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
-import javax.imageio.ImageTypeSpecifier;
-import java.awt.*;
+import java.awt.Image;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Color;
 import java.awt.image.BufferedImage;
+
+import java.util.List;
+import java.util.Map;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 
 @RestController
 @SpringBootApplication
@@ -23,11 +38,36 @@ public class Application {
 	}
 
 	@GetMapping ("/")
-	public String index() {
+	public String index() throws IOException {
+		//generateImages("test.xlsx");
 		Barcode barcode = new Barcode();
 		Image img = barcode.encode(EncodingType.CODE128, "12345678");
 		return savePic(img,"PNG","testts.png");
 	}
+
+	public void generateImages(String fileLocation) throws IOException {
+		FileInputStream file = new FileInputStream(new File(fileLocation));
+		Workbook workbook = new XSSFWorkbook(file);
+
+		Sheet sheet = workbook.getSheetAt(0);
+
+		Map<Integer, List<String>> data = new HashMap<>();
+		int i = 0;
+		for (Row row : sheet) {
+			data.put(i, new ArrayList<String>());
+			for (Cell cell : row) {
+				switch (cell.getCellType()) {
+					case STRING: System.out.println("STRING: " + cell); break;
+					case NUMERIC: System.out.println("NUMERIC: " + cell); break;
+					case BOOLEAN: System.out.println("BOOLEAN: " + cell); break;
+					case FORMULA: System.out.println("FORMULA: " + cell); break;
+					default: data.get(i).add(" ");
+				}
+			}
+			i++;
+		}
+	}
+
 
 	public String savePic(Image image, String type, String dst){
 
@@ -46,11 +86,10 @@ public class Application {
 			Font fontDesc = new Font(Font.SERIF, Font.PLAIN, 20);
 			Font fontPrice = new Font(Font.SERIF, Font.BOLD,25);
 
-			FontMetrics fontMetrics = graphics.getFontMetrics();
 			graphics.fillRect(0,0,widthImage,heightImage);
 			graphics.setColor(Color.BLACK);
 			graphics.setFont(fontTitle);
-			fontMetrics = graphics.getFontMetrics();
+			FontMetrics fontMetrics = graphics.getFontMetrics();
 			graphics.drawString("BIGMARKET",(widthImage - fontMetrics.stringWidth("BIGMARKET"))/2, fontMetrics.getHeight() + 5);
 			graphics.drawImage(image, 0, fontMetrics.getHeight() + 10, null);
 			graphics.setFont(fontCode);
@@ -63,8 +102,8 @@ public class Application {
 			fontMetrics = graphics.getFontMetrics();
 			graphics.drawString("$10.000",(widthImage - fontMetrics.stringWidth("$10.000"))/2,140 + image.getHeight(null));
 
-			//BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
-			//bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
+			BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
+			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
 
 			ImageIO.write(bufferedImage, type, new File(dst));
 			return "BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth("BIGMARKET"))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null);

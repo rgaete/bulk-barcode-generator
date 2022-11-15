@@ -17,6 +17,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.pnuema.java:barcode:1.13'
+	implementation 'org.apache.poi:poi:5.2.3'
+	implementation 'org.apache.poi:poi-ooxml:5.2.3'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
