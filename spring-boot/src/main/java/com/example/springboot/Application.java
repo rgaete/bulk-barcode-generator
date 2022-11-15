@@ -33,16 +33,16 @@ import java.util.HashMap;
 @SpringBootApplication
 public class Application {
 
+	public static final String TITLE = "BIGMARKET";
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
 	@GetMapping ("/")
 	public String index() throws IOException {
-		//generateImages("test.xlsx");
-		Barcode barcode = new Barcode();
-		Image img = barcode.encode(EncodingType.CODE128, "12345678");
-		return savePic(img,"PNG","testts.png");
+		generateImages("test.xlsx");
+		return "SUCCESS !!! ";
 	}
 
 	public void generateImages(String fileLocation) throws IOException {
@@ -56,20 +56,23 @@ public class Application {
 		for (Row row : sheet) {
 			data.put(i, new ArrayList<String>());
 			for (Cell cell : row) {
-				switch (cell.getCellType()) {
-					case STRING: System.out.println("STRING: " + cell); break;
-					case NUMERIC: System.out.println("NUMERIC: " + cell); break;
-					case BOOLEAN: System.out.println("BOOLEAN: " + cell); break;
-					case FORMULA: System.out.println("FORMULA: " + cell); break;
-					default: data.get(i).add(" ");
-				}
+				data.get(i).add(cell.toString());
 			}
 			i++;
+		}
+
+		for (Map.Entry entrySet: data.entrySet()) {
+			if((int)entrySet.getKey() > 0){
+				ArrayList<String> lista = ((ArrayList<String>) entrySet.getValue());
+				Barcode barcode = new Barcode();
+				Image img = barcode.encode(EncodingType.CODE128A, lista.get(0));
+				savePic(img,"PNG","Producto_" + lista.get(0) + ".png", lista.get(0), lista.get(1), lista.get(7));
+			}
 		}
 	}
 
 
-	public String savePic(Image image, String type, String dst){
+	public void savePic(Image image, String extension, String fileDestination, String code, String description, String price){
 
 		int heightImage = 300;
 		int widthImage = 300;
@@ -90,28 +93,27 @@ public class Application {
 			graphics.setColor(Color.BLACK);
 			graphics.setFont(fontTitle);
 			FontMetrics fontMetrics = graphics.getFontMetrics();
-			graphics.drawString("BIGMARKET",(widthImage - fontMetrics.stringWidth("BIGMARKET"))/2, fontMetrics.getHeight() + 5);
+			graphics.drawString(TITLE,(widthImage - fontMetrics.stringWidth(TITLE))/2, fontMetrics.getHeight() + 5);
 			graphics.drawImage(image, 0, fontMetrics.getHeight() + 10, null);
 			graphics.setFont(fontCode);
 			fontMetrics = graphics.getFontMetrics();
-			graphics.drawString("12345678",(widthImage - fontMetrics.stringWidth("12345678"))/2,80 + image.getHeight(null));
+			graphics.drawString(code,(widthImage - fontMetrics.stringWidth(code))/2,80 + image.getHeight(null));
 			graphics.setFont(fontDesc);
 			fontMetrics = graphics.getFontMetrics();
-			graphics.drawString("Descripcion",(widthImage - fontMetrics.stringWidth("Descripcion"))/2,110 + image.getHeight(null));
+			graphics.drawString(description,(widthImage - fontMetrics.stringWidth(description))/2,110 + image.getHeight(null));
 			graphics.setFont(fontPrice);
 			fontMetrics = graphics.getFontMetrics();
-			graphics.drawString("$10.000",(widthImage - fontMetrics.stringWidth("$10.000"))/2,140 + image.getHeight(null));
+			graphics.drawString(price,(widthImage - fontMetrics.stringWidth(price))/2,140 + image.getHeight(null));
 
 			BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
 			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
 
-			ImageIO.write(bufferedImage, type, new File(dst));
-			return "BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth("BIGMARKET"))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null);
+			ImageIO.write(bufferedImage, extension, new File(fileDestination));
+			System.out.println("BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth(TITLE))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return "FAIL";
 	}
 
 }
