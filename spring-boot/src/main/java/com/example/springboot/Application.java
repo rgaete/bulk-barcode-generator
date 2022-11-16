@@ -65,7 +65,7 @@ public class Application {
 			if((int)entrySet.getKey() > 0){
 				ArrayList<String> lista = ((ArrayList<String>) entrySet.getValue());
 				Barcode barcode = new Barcode();
-				Image img = barcode.encode(EncodingType.CODE128A, lista.get(0));
+				Image img = barcode.encode(EncodingType.CODE128, lista.get(0));
 				savePic(img,"PNG","Producto_" + lista.get(0) + ".png", lista.get(0), lista.get(1), lista.get(7));
 			}
 		}
