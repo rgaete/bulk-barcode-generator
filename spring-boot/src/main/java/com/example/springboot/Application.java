@@ -76,8 +76,8 @@ public class Application {
 
 		int heightImage = 280;
 		int widthImage = 930;
-		int heightImageSmall = 100;
-		int widthImageSmall = 310;
+		int heightImageSmall = 200;
+		int widthImageSmall = 620;
 
 		BufferedImage bufferedImage = new BufferedImage(widthImage,heightImage, BufferedImage.TYPE_INT_ARGB);
 		Graphics graphics = bufferedImage.getGraphics();
@@ -108,6 +108,7 @@ public class Application {
 
 			graphics.setFont(fontDesc);
 			fontMetrics = graphics.getFontMetrics();
+			description = (description.length() < 12 ) ? description :  description.substring(0,12);
 			graphics.drawString(description,(305 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
 			graphics.drawString(description,305 + (305 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
 			graphics.drawString(description,620 + (305 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
@@ -123,7 +124,8 @@ public class Application {
 			BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
 			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
 
-			ImageIO.write(bufferedImage, extension, new File(fileDestination));
+			//ImageIO.write(bufferedImage, extension, new File(fileDestination));
+			ImageIO.write(bufferedImageSmall, extension, new File(fileDestination));
 			System.out.println("BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth(TITLE))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
