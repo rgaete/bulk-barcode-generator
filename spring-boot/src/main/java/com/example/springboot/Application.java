@@ -56,7 +56,7 @@ public class Application {
 		for (Row row : sheet) {
 			data.put(i, new ArrayList<String>());
 			for (Cell cell : row) {
-				data.get(i).add(cell.toString());
+				data.get(i).add(cell.toString().trim().replace('.','0'));
 			}
 			i++;
 		}
@@ -66,6 +66,7 @@ public class Application {
 				ArrayList<String> lista = ((ArrayList<String>) entrySet.getValue());
 				Barcode barcode = new Barcode();
 				Image img = barcode.encode(EncodingType.CODE128, lista.get(0));
+				img = img.getScaledInstance(200,100,BufferedImage.SCALE_REPLICATE);
 				savePic(img,"PNG","Producto_" + lista.get(0) + ".png", lista.get(0), lista.get(1), lista.get(7));
 			}
 		}
@@ -77,7 +78,7 @@ public class Application {
 		int heightImage = 280;
 		int widthImage = 930;
 		int heightImageSmall = 200;
-		int widthImageSmall = 620;
+		int widthImageSmall = 720;
 
 		BufferedImage bufferedImage = new BufferedImage(widthImage,heightImage, BufferedImage.TYPE_INT_ARGB);
 		Graphics graphics = bufferedImage.getGraphics();
