@@ -66,7 +66,7 @@ public class Application {
 				ArrayList<String> lista = ((ArrayList<String>) entrySet.getValue());
 				Barcode barcode = new Barcode();
 				Image img = barcode.encode(EncodingType.CODE128, lista.get(0));
-				img = img.getScaledInstance(200,100,BufferedImage.SCALE_REPLICATE);
+				img = img.getScaledInstance(img.getWidth(null),80,BufferedImage.SCALE_REPLICATE);
 				savePic(img,"PNG","Producto_" + lista.get(0) + ".png", lista.get(0), lista.get(1), lista.get(7));
 			}
 		}
@@ -98,29 +98,29 @@ public class Application {
 			//graphics.drawString(TITLE,(widthImage - fontMetrics.stringWidth(TITLE))/2, fontMetrics.getHeight() + 5);
 
 			graphics.drawImage(image, 5,  10, null);
-			graphics.drawImage(image, 310,  10, null);
-			graphics.drawImage(image, 620,  10, null);
+			graphics.drawImage(image, 315,  10, null);
+			graphics.drawImage(image, 625,  10, null);
 
 			graphics.setFont(fontCode);
 			fontMetrics = graphics.getFontMetrics();
-			graphics.drawString(code,(305 - fontMetrics.stringWidth(code))/2,40 + image.getHeight(null));
-			graphics.drawString(code,305 + (305 - fontMetrics.stringWidth(code))/2,40 + image.getHeight(null));
-			graphics.drawString(code,620 + (305 - fontMetrics.stringWidth(code))/2,40 + image.getHeight(null));
+			graphics.drawString(code,(310 - fontMetrics.stringWidth(code))/2,40 + image.getHeight(null));
+			graphics.drawString(code,310 + (310 - fontMetrics.stringWidth(code))/2,40 + image.getHeight(null));
+			graphics.drawString(code,625 + (305 - fontMetrics.stringWidth(code))/2,40 + image.getHeight(null));
 
 			graphics.setFont(fontDesc);
 			fontMetrics = graphics.getFontMetrics();
 			description = (description.length() < 12 ) ? description :  description.substring(0,12);
-			graphics.drawString(description,(305 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
-			graphics.drawString(description,305 + (305 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
-			graphics.drawString(description,620 + (305 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
+			graphics.drawString(description,(310 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
+			graphics.drawString(description,310 + (310 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
+			graphics.drawString(description,625 + (310 - fontMetrics.stringWidth(description))/2,65 + image.getHeight(null));
 
 
 			graphics.setFont(fontPrice);
 			fontMetrics = graphics.getFontMetrics();
 			price = "$ " + price;
-			graphics.drawString(price,(305 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
-			graphics.drawString(price,305 + (305 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
-			graphics.drawString(price,620 + (305 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
+			graphics.drawString(price,(310 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
+			graphics.drawString(price,310 + (310 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
+			graphics.drawString(price,625 + (310 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
 
 			BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
 			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
