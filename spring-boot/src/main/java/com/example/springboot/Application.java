@@ -125,8 +125,8 @@ public class Application {
 			BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
 			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
 
-			//ImageIO.write(bufferedImage, extension, new File(fileDestination));
-			ImageIO.write(bufferedImageSmall, extension, new File(fileDestination));
+			ImageIO.write(bufferedImage, extension, new File(fileDestination));
+			//ImageIO.write(bufferedImageSmall, extension, new File(fileDestination));
 			System.out.println("BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth(TITLE))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
