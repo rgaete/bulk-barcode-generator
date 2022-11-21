@@ -9,7 +9,14 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
@@ -20,13 +27,18 @@ import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 
-import java.util.List;
-import java.util.Map;
+import java.io.FileOutputStream;
+import java.net.MalformedURLException;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.text.NumberFormat;
+import java.text.ParseException;
+import java.util.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 
 @RestController
@@ -40,12 +52,60 @@ public class Application {
 	}
 
 	@GetMapping ("/")
-	public String index() throws IOException {
+	public String index() throws IOException, ParseException {
 		generateImages("test.xlsx");
 		return "SUCCESS !!! ";
 	}
 
-	public void generateImages(String fileLocation) throws IOException {
+
+	@GetMapping("/download/{fileName:.+}")
+	public ResponseEntity downloadFileFromLocal(@PathVariable String fileName) {
+		Path path = Paths.get(fileName);
+		Resource resource = null;
+		try {
+			resource = new UrlResource(path.toUri());
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+		return ResponseEntity.ok()
+				.contentType(MediaType.parseMediaType("application/zip"))
+				.header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
+				.body(resource);
+	}
+
+	@GetMapping ("/generateZip")
+	public String generateZip() throws IOException, ParseException {
+		compress("images");
+		return "ZIP File has been created !!! ";
+	}
+
+	public static void compress(String dirPath) {
+		final Path sourceDir = Paths.get(dirPath);
+		String zipFileName = dirPath.concat(".zip");
+		try {
+			final ZipOutputStream outputStream = new ZipOutputStream(new FileOutputStream(zipFileName));
+			Files.walkFileTree(sourceDir, new SimpleFileVisitor<Path>() {
+				@Override
+				public FileVisitResult visitFile(Path file, BasicFileAttributes attributes) {
+					try {
+						Path targetFile = sourceDir.relativize(file);
+						outputStream.putNextEntry(new ZipEntry(targetFile.toString()));
+						byte[] bytes = Files.readAllBytes(file);
+						outputStream.write(bytes, 0, bytes.length);
+						outputStream.closeEntry();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+					return FileVisitResult.CONTINUE;
+				}
+			});
+			outputStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void generateImages(String fileLocation) throws IOException, ParseException {
 		FileInputStream file = new FileInputStream(new File(fileLocation));
 		Workbook workbook = new XSSFWorkbook(file);
 
@@ -56,7 +116,7 @@ public class Application {
 		for (Row row : sheet) {
 			data.put(i, new ArrayList<String>());
 			for (Cell cell : row) {
-				data.get(i).add(cell.toString().trim().replace('.','0'));
+				data.get(i).add(cell.toString());
 			}
 			i++;
 		}
@@ -67,21 +127,26 @@ public class Application {
 				Barcode barcode = new Barcode();
 				Image img = barcode.encode(EncodingType.CODE128, lista.get(0));
 				img = img.getScaledInstance(img.getWidth(null),80,BufferedImage.SCALE_REPLICATE);
-				savePic(img,"PNG","Producto_" + lista.get(0) + ".png", lista.get(0), lista.get(1), lista.get(7));
+				savePic(img,"PNG","images/Producto_" + lista.get(0) + ".png", lista.get(0), lista.get(1), NumberFormat.getInstance().parse(lista.get(7)));
 			}
 		}
 	}
 
 
-	public void savePic(Image image, String extension, String fileDestination, String code, String description, String price){
+	public void savePic(Image image, String extension, String fileDestination, String code, String description, Number price){
 
-		int heightImage = 280;
+		int heightImage = 190;
 		int widthImage = 930;
 		int heightImageSmall = 200;
 		int widthImageSmall = 720;
 
 		BufferedImage bufferedImage = new BufferedImage(widthImage,heightImage, BufferedImage.TYPE_INT_ARGB);
 		Graphics graphics = bufferedImage.getGraphics();
+
+		Locale chile = new Locale("es", "CL");
+		Currency pesos = Currency.getInstance(chile);
+		NumberFormat numberFormat = NumberFormat.getCurrencyInstance(chile);
+
 
 		try {
 			graphics.setColor(Color.WHITE);
@@ -117,10 +182,10 @@ public class Application {
 
 			graphics.setFont(fontPrice);
 			fontMetrics = graphics.getFontMetrics();
-			price = "$ " + price;
-			graphics.drawString(price,(310 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
-			graphics.drawString(price,310 + (310 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
-			graphics.drawString(price,625 + (310 - fontMetrics.stringWidth(price))/2,100 + image.getHeight(null));
+			String priceString = numberFormat.format(price);
+			graphics.drawString(priceString,(310 - fontMetrics.stringWidth(priceString))/2,100 + image.getHeight(null));
+			graphics.drawString(priceString,310 + (310 - fontMetrics.stringWidth(priceString))/2,100 + image.getHeight(null));
+			graphics.drawString(priceString,625 + (310 - fontMetrics.stringWidth(priceString))/2,100 + image.getHeight(null));
 
 			BufferedImage bufferedImageSmall = new BufferedImage(widthImageSmall,heightImageSmall,BufferedImage.TYPE_INT_BGR);
 			bufferedImageSmall.getGraphics().drawImage(bufferedImage.getScaledInstance(widthImageSmall,heightImageSmall,BufferedImage.SCALE_REPLICATE),0,0,null);
