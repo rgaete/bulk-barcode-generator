@@ -6,6 +6,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.util.StringUtil;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -53,7 +54,7 @@ public class Application {
 
 	@GetMapping ("/")
 	public String index() throws IOException, ParseException {
-		generateImages("test.xlsx");
+		generateImages("Bsale 21-11-2022.xlsx");
 		return "SUCCESS !!! ";
 	}
 
@@ -114,9 +115,11 @@ public class Application {
 		Map<Integer, List<String>> data = new HashMap<>();
 		int i = 0;
 		for (Row row : sheet) {
-			data.put(i, new ArrayList<String>());
-			for (Cell cell : row) {
-				data.get(i).add(cell.toString());
+			if(i>=4){
+				data.put(i, new ArrayList<String>());
+				for (Cell cell : row) {
+					data.get(i).add(cell.toString());
+				}
 			}
 			i++;
 		}
@@ -125,9 +128,10 @@ public class Application {
 			if((int)entrySet.getKey() > 0){
 				ArrayList<String> lista = ((ArrayList<String>) entrySet.getValue());
 				Barcode barcode = new Barcode();
-				Image img = barcode.encode(EncodingType.CODE128, lista.get(0));
+				System.out.println(lista.get(1));
+				Image img = barcode.encode(EncodingType.CODE128A, lista.get(1).trim());
 				img = img.getScaledInstance(img.getWidth(null),80,BufferedImage.SCALE_REPLICATE);
-				savePic(img,"PNG","images/Producto_" + lista.get(0) + ".png", lista.get(0), lista.get(1), NumberFormat.getInstance().parse(lista.get(7)));
+				savePic(img,"PNG","images/Producto_" + lista.get(1) + ".png", lista.get(1), lista.get(3), NumberFormat.getInstance().parse(lista.get(4)));
 			}
 		}
 	}
