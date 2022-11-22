@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="783d92f2-5a72-469d-86a0-47bc5b9d32f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/springboot/Application$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/springboot/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/spring-boot-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/spring-boot-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resolvedMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1100625&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1100654&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1100974&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1104512&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1105689&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1105892&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1106234&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1106873&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1110507&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1111736&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1112069&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1112473&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1113645&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1114594&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1114691&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1115053&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1116083&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1116155&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1116385&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1116784&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1117217&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1118449&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1118454&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1118488&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1118684&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1119647&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1120078&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1120520&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1121768&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1122620&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1122642&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1123724&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1123737&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1123740&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1123745&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1123750&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124073&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124075&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124397&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124407&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124568&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124656&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124707&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124709&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124712&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124713&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124773&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124783&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124833&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124882&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124930&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1124932&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125035&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125185&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125196&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125222&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125230&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125231&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125302&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125390&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125419&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125804&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1125857&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1126090&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1126642&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1127163&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1127169&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1127960&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1128399&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1129367&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1129512&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1130348&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1131692&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1131724&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1131896&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1131954&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1131955&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1132235&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1132647&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1132684&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1132685&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1133023&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1133398&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1133538&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1133576&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134438&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134448&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134449&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134456&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134471&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134472&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134476&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134479&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134480&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134490&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134504&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134506&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134508&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134553&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134555&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134587&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134588&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134592&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134598&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134603&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134604&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134810&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134814&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134837&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134880&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134894&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134954&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134969&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134970&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134974&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1134997&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135000&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135002&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135034&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135038&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135080&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135095&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135105&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135108&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135113&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135116&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135117&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135118&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135132&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135138&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135140&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135145&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135165&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135169&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135170&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135376&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135377&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135378&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135393&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135422&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135431&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135432&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135433&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135434&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135435&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135450&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135460&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135461&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135490&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135495&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135496&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135501&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135503&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135527&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135530&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135531&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135532&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135533&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135534&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135535&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135536&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135539&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135540&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135542&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135551&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135552&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135553&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135554&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135559&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135565&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135574&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135585&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135601&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135681&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135697&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135700&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135706&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135715&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135738&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135742&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135743&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135744&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135773&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135779&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135813&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135814&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135834&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135873&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135977&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135981&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1135988&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136020&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136032&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136033&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136071&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136130&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136133&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136161&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136360&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136371&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136402&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136413&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136742&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136766&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136768&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136785&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136787&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136788&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1136789&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1137061&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1137117&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1138592&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1138596&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1138648&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1138665&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1139246&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1139497&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1140187&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1141683&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1141687&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1141711&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1141740&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1142144&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1142207&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1142430&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1142994&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1142997&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1143011&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1143083&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1143113&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1143342&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1143655&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1143804&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1143935&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1144889&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1144891&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1144892&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1144985&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145041&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145042&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145046&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145047&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145082&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145092&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145096&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145101&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145162&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145202&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145203&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145272&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145336&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145588&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145590&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145592&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145784&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145785&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145790&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145792&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145795&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1145809&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1146656&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1146658&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1146660&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1146668&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1146709&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1146839&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1146936&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1147025&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1147265&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1147423&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1147503&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1147787&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1147953&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148281&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148314&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148315&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148439&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148503&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148561&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148565&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148602&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148669&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148853&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148909&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1148910&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1149001&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1149072&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1149230&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1149256&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1149836&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1151064&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1151149&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1151152&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1151322&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1152107&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1152339&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1152668&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1153204&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1155750&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1156543&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1156568&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1156574&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1156659&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1158108&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;1163003&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;12-175&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;16131&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;326-20HX&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;6213&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;66839340&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;7013791-FM&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;7014057-FM&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;70148&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;72190&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;7698-B2C&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;791128001&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;832-HX&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;842023&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;843967001&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;847888&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;851762&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;851901&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;861159&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;862274&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;865059&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_&quot;866218&quot;.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1100625.0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1105689.0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_112345678.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1140187.0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_114323454.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_123232332.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_123445234.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_124533535.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_8.46377001E8.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_8.46377001E8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BC12-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BC12-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BCD704C1-B2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BCD704C1-B2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BDC6L-LA.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BDC6L-LA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BDC8-LA.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BDC8-LA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BDEG820-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BDEG820-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BDEP650-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BDEP650-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BEHTS401-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BEHTS401-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BIG1001.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BIG1001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BIG1002.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BIG1002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BIG1003.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BIG1003.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BIG1004.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BIG1004.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BS200-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BS200-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_BV25-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_BV25-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_CD121K-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_CD121K-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_CS1004-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_CS1004-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_D28730-B2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_D28730-B2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_DCC020IB.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_DCC020IB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_DCE560B.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_DCE560B.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_DW292-B2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_DW292-B2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_DW714-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_DW714-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_DWE4010-B2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_DWE4010-B2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_DWE4120-B2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_DWE4120-B2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_DWE560-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_DWE560-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_DWE6421-B2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_DWE6421-B2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_G650GL-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_G650GL-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_GH1100-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_GH1100-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_GH750-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_GH750-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_GK1740-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_GK1740-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_GL350-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_GL350-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_GL600N-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_GL600N-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_GR1000-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_GR1000-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_GR3000-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_GR3000-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_GR3800-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_GR3800-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_HD555-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_HD555-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_HX380 OEM.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_HX380 OEM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_HX607 OEM.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_HX607 OEM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_HX608 OEM.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_HX608 OEM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_HX807 OEM.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_HX807 OEM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_IW5615.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_IW5615.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_IW9640.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_IW9640.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_JS350S-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_JS350S-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_JS500S-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_JS500S-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_KP12K-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_KP12K-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_KS501-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_KS501-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01000.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01001.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01002.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01003.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01003.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01004.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01004.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01005.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01005.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01006.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01006.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01007.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01007.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01008.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01008.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01009.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01009.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01010.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01010.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01011.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01011.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01012.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01012.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01013.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01013.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01014.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01014.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01015.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01015.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01016.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01016.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01017.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01017.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01018.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01018.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01019.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01019.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01020.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01020.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01021.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01021.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01022.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01022.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LC01023.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LC01023.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LD008KA-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LD008KA-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LHT2220-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LHT2220-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_LSTE523-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_LSTE523-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SB90-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SB90-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SBT2513-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SBT2513-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SC16-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SC16-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SDH600-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SDH600-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SG6115-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SG6115-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SG7115V3-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SG7115V3-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SM16-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SM16-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SS24-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SS24-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SSC22-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SSC22-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_SST1801-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_SST1801-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_ST4500-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_ST4500-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_STDH8013-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_STDH8013-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_STDR5206-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_STDR5206-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_STGS7221-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_STGS7221-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_STHR202K-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_STHR202K-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_STPP7502-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_STPP7502-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_TB550-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_TB550-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_TRE550-B2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_TRE550-B2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HuIUZbj85pOged2D2BsYuKHcQ6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/r0g01a5/Documents/mywork/bulk-barcode-generator"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="783d92f2-5a72-469d-86a0-47bc5b9d32f3" name="Changes" comment="" />
+      <created>1669128559311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669128559311</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
