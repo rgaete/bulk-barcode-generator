@@ -4,9 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="783d92f2-5a72-469d-86a0-47bc5b9d32f3" name="Changes" comment="">
+    <list default="true" id="e1ee7694-44c3-4bca-b968-adcdb3c31765" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bsale 21-11-2022.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Bsale 21-11-2022.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/springboot/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/springboot/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1123750.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1123750.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1125302.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1125302.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1125390.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1125390.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1126090.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1126090.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1134438.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1134438.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1134472.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1134472.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1134504.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1134504.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1134506.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1134506.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1134508.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1134508.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1134588.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1134588.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1135700.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1135700.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Producto_1163003.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Producto_1163003.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$Bsale 21-11-2022.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,26 +55,27 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2HuIUZbj85pOged2D2BsYuKHcQ6" />
+  <component name="ProjectId" id="2I9knTUEBc4xgw60PgRYlcLQsad" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/r0g01a5/Documents/mywork/bulk-barcode-generator&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/r0g01a5/Documents/mywork/bulk-barcode-generator"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="783d92f2-5a72-469d-86a0-47bc5b9d32f3" name="Changes" comment="" />
-      <created>1669128559311</created>
+      <changelist id="e1ee7694-44c3-4bca-b968-adcdb3c31765" name="Changes" comment="" />
+      <created>1669601355521</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1669128559311</updated>
+      <updated>1669601355521</updated>
     </task>
     <servers />
   </component>

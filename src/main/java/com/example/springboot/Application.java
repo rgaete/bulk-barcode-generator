@@ -128,8 +128,7 @@ public class Application {
 			if((int)entrySet.getKey() > 0){
 				ArrayList<String> lista = ((ArrayList<String>) entrySet.getValue());
 				Barcode barcode = new Barcode();
-				String code = lista.get(1).trim().replace("\"","");
-				System.out.println(code);
+				String code = lista.get(1).trim().replace("\"","").replace(".0","");
 				Image img = barcode.encode(EncodingType.CODE128A, code);
 				img = img.getScaledInstance(img.getWidth(null),80,BufferedImage.SCALE_REPLICATE);
 				savePic(img,"PNG","images/Producto_" + code + ".png", code, lista.get(3), NumberFormat.getInstance().parse(lista.get(4)));
@@ -197,7 +196,6 @@ public class Application {
 
 			ImageIO.write(bufferedImage, extension, new File(fileDestination));
 			//ImageIO.write(bufferedImageSmall, extension, new File(fileDestination));
-			System.out.println("BIGMARKET WIDTH: " + (widthImage - fontMetrics.stringWidth(TITLE))/2 + " W: " + widthImage + "Font H: " + fontMetrics.getHeight() + "BC W: " + image.getWidth(null));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
